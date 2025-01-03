@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main__container">
+        <div class="nav">
+            <div class="nav__logo">
+                <p>Weather App</p>
+            </div>
+            <div class="nav__search">
+                <form action="#" class="search__form">
+                    <input type="text" name="searchbar" id="searchbar" autocomplete="off" required>
+                    <button type="submit" class="form__submit-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div id="loading"></div>
+        <div id="error" class="hide"></div>
+
+        <div class="dashboard">
+            <div class="dashboard__primary">
+                <div class="primary__left col">
+                    <div class="left__location">
+                        <p class="region">
+                            <span class="region__city"></span>
+                            <span class="region__country"></span>
+                        </p>
+                        <p class="date"></p>
+                    </div>
+                    <div class="left__weatherData">
+                        <div class="temp__details">
+                            <div class="weatherIcon">
+                                <img src="" alt="weather-icon">
+                                <p class="weatherDesc"></p>
+                            </div>
+
+                            <div class="temp">
+                                <p class="tempVal bigText"></p>
+                                <p class="feels-like"></p>
+                            </div>
+                        </div>
+                        <div class="minmax">
+                            <div class="min">
+                                <div class="minIcon"><i class="fa-solid fa-arrow-down"></i></div>
+                                <div class="minTemp">
+                                    <p class="minText">Min</p>
+                                    <p class="minVal mediumText"></p>
+                                </div>
+                            </div>
+                            <div class="max">
+                                <div class="maxIcon"><i class="fa-solid fa-arrow-up"></i></div>
+                                <div class="maxTemp">
+                                    <p class="maxText">Max</p>
+                                    <p class="maxVal mediumText"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="primary__right col">
+                    <p class="right__title">Weather Details</p>
+                    <ul class="right__weatherListItems">
+                        <!-- to be updated by js -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dashboard__secondary">
+                <p>5 days Forecast</p>
+                <div class="secondary__weatherCards">
+
+                    <!-- to be updated by js -->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="smallText">Copyright &copy; cleancoder-in <a href=""><i class="fa-brands fa-github"></i></a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

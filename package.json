@@ -1,0 +1,33 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "JS: Weather-app. In this project, I have used fetch api to get the data asynchronously using \"Async/Await\" or \"Promises\". I have also used ES6 modules and classes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleancoder-in/weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cleancoder-in/weather-app/issues"
+  },
+  "homepage": "https://github.com/cleancoder-in/weather-app#readme",
+  "devDependencies": {
+    "css": "^3.0.0",
+    "css-loader": "^7.1.2",
+    "date-fns": "^4.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "loader": "^2.1.1",
+    "style": "^0.0.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
